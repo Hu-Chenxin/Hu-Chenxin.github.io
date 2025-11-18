@@ -1,50 +1,84 @@
 <!DOCTYPE html>
-<html lang="zh-cn">
+<html lang="zh-CN">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Danica · 作品集</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header class="header">
-        <div class="logo">DANICA PORTFOLIO</div>
+  <!-- Canvas 背景（夜空扫描粒子） -->
+  <canvas id="bg-canvas"></canvas>
+
+  <div class="wrap">
+    <header class="topbar">
+      <div class="brand">
+        <span class="logo-accent">D</span>ANICA
+      </div>
+      <nav class="nav">
+        <a href="/game">GAME</a>
+        <a href="/ai">AI</a>
+        <a href="/ux">UX</a>
+        <a href="/art">ART</a>
+        <a href="/research">RESEARCH</a>
+      </nav>
     </header>
 
-    <section class="hero">
-        <h1 class="title">探索我的作品宇宙</h1>
-        <p class="subtitle">Game · AI · UX · Art · Architecture · Research</p>
-    </section>
+    <main class="main">
+      <section class="hero">
+        <h1>探索我的作品宇宙</h1>
+        <p class="lead">Game · AI · UX · Art · Architecture · Research</p>
+        <div class="cta-row">
+          <a class="cta" href="#grid">查看作品</a>
+          <a class="cta ghost" href="/resume.pdf" target="_blank">下载简历</a>
+        </div>
+      </section>
 
-    <section class="grid">
-        <a href="/game" class="card">
-            <h2>GAME</h2>
-            <p>游戏设计 · 玩法原型 · Unity 实现</p>
+      <section id="grid" class="grid">
+        <!-- 每个卡片可替换为实际作品链接 / 封面图 -->
+        <a class="card" href="/game">
+          <div class="card-inner">
+            <h3>GAME</h3>
+            <p>叙事 · 玩法 · Unity 原型</p>
+          </div>
         </a>
 
-        <a href="/ai" class="card">
-            <h2>AI PRODUCT</h2>
-            <p>AI 工作流 · 生成式工具 · Agent 技术</p>
+        <a class="card" href="/ai">
+          <div class="card-inner">
+            <h3>AI PRODUCT</h3>
+            <p>Agent · 生成式工作流 · Demo</p>
+          </div>
         </a>
 
-        <a href="/ux" class="card">
-            <h2>UX / PRODUCT</h2>
-            <p>体验设计 · 产品逻辑 · 用户旅程</p>
+        <a class="card" href="/ux">
+          <div class="card-inner">
+            <h3>UX / PRODUCT</h3>
+            <p>用户旅程 · 流程映射 · 原型</p>
+          </div>
         </a>
 
-        <a href="/art" class="card">
-            <h2>ART & TA</h2>
-            <p>角色设计 · 技术美术 · 场景风格</p>
+        <a class="card" href="/art">
+          <div class="card-inner">
+            <h3>ART & TA</h3>
+            <p>角色 · 场景 · 技术美术</p>
+          </div>
         </a>
 
-        <a href="/research" class="card">
-            <h2>RESEARCH</h2>
-            <p>论文发表 · 学术研究 · 概念框架</p>
+        <a class="card big" href="/research">
+          <div class="card-inner">
+            <h3>RESEARCH</h3>
+            <p>学术 · 毕业论文 · 发表</p>
+          </div>
         </a>
-    </section>
+      </section>
 
-    <footer class="footer">
-        <p>© 2025 Danica · GitHub Pages Powered</p>
-    </footer>
+      <footer class="footer">
+        <p>© 2025 Danica · Built with GitHub Pages</p>
+      </footer>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
+
