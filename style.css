@@ -1,0 +1,91 @@
+/* 全局变量：未来感蓝紫色调 */
+:root {
+    --bg: #0e0f14;
+    --fg: #e6e6f0;
+    --accent: #7f7cff;
+    --card-bg: #1a1c24;
+    --card-hover: #262936;
+    --radius: 18px;
+    --trans: 0.25s ease;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: 'Inter', 'HarmonyOS Sans', sans-serif;
+}
+
+.header {
+    padding: 24px 40px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    opacity: 0.95;
+}
+
+.logo {
+    color: var(--accent);
+}
+
+.hero {
+    text-align: center;
+    padding: 80px 20px 50px;
+}
+
+.title {
+    font-size: 42px;
+    margin: 0;
+    font-weight: 700;
+}
+
+.subtitle {
+    margin-top: 12px;
+    color: #aab0c5;
+    font-size: 18px;
+}
+
+.grid {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background: var(--card-bg);
+    padding: 28px;
+    border-radius: var(--radius);
+    text-decoration: none;
+    color: var(--fg);
+    transition: var(--trans);
+    border: 1px solid transparent;
+}
+
+.card:hover {
+    background: var(--card-hover);
+    border: 1px solid var(--accent);
+    transform: translateY(-4px);
+}
+
+.card h2 {
+    margin: 0;
+    font-size: 24px;
+    color: var(--accent);
+}
+
+.card p {
+    margin-top: 12px;
+    line-height: 1.6;
+    color: #b4b7c8;
+}
+
+.footer {
+    text-align: center;
+    padding: 40px 0;
+    font-size: 14px;
+    color: #666a80;
+}
