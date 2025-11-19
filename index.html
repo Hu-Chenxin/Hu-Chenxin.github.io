@@ -3,77 +3,93 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Danica · 作品集</title>
+  <title>HU Chenxin's Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Canvas 背景（夜空扫描粒子） -->
   <canvas id="bg-canvas"></canvas>
 
   <div class="wrap">
     <header class="topbar">
       <div class="brand">
-        <span class="logo-accent">D</span>ANICA
+        <span class="logo-accent">CHEN</span>XIN 
       </div>
       <nav class="nav">
         <a href="/game">GAME</a>
-        <a href="/ai">AI</a>
-        <a href="/ux">UX</a>
+        <a href="/ai">AI PRODUCT</a>
         <a href="/art">ART</a>
+        <a href="/art">ARCHITECTURE</a>
         <a href="/research">RESEARCH</a>
       </nav>
     </header>
 
     <main class="main">
       <section class="hero">
-        <h1>探索我的作品宇宙</h1>
-        <p class="lead">Game · AI · UX · Art · Architecture · Research</p>
-        <div class="cta-row">
-          <a class="cta" href="#grid">查看作品</a>
-          <a class="cta ghost" href="/resume.pdf" target="_blank">下载简历</a>
-        </div>
+        <h1>Explore the Universe of my Projects</h1>
+        <p class="lead">Game · AI Product · Art · Architecture · Research</p>
       </section>
 
       <section id="grid" class="grid">
-        <!-- 每个卡片可替换为实际作品链接 / 封面图 -->
-        <a class="card" href="/game">
-          <div class="card-inner">
-            <h3>GAME</h3>
-            <p>叙事 · 玩法 · Unity 原型</p>
-          </div>
-        </a>
+        <div class="grid-row top">
+          <a class="card" href="/game">
+              <picture class="card-media" aria-hidden="false">
+                <img src="image/VV.png" alt="Game prototype screenshot" class="card-img">
+              </picture>
+            <div class="card-inner">
+              <h3>GAME</h3>
+              <p>AI Roguelike · VR ICH · Clash Royale Proposal </p>
+            </div>
+          </a>
 
-        <a class="card" href="/ai">
-          <div class="card-inner">
-            <h3>AI PRODUCT</h3>
-            <p>Agent · 生成式工作流 · Demo</p>
-          </div>
-        </a>
+          <a class="card" href="/ai">
+            <picture class="card-media" aria-hidden="false">
+              <img src="image/12-AI工作流 (1).png" alt="AI product demo screenshot" class="card-img">
+            </picture>
+            <div class="card-inner">
+              <h3>AI PRODUCT</h3>
+              <p>GrowYou APP · Internship Work · Demo</p>
+            </div>
+          </a>
+        </div>
 
-        <a class="card" href="/ux">
-          <div class="card-inner">
-            <h3>UX / PRODUCT</h3>
-            <p>用户旅程 · 流程映射 · 原型</p>
-          </div>
-        </a>
+        <div class="grid-row bottom">
+          <a class="card" href="/ux">
+            <picture class="card-media" aria-hidden="false">
+              <source srcset="https://picsum.photos/id/1003/640/360.webp 1x, https://picsum.photos/id/1003/1280/720.webp 2x" type="image/webp">
+              <img src="https://picsum.photos/id/1003/640/360.jpg" srcset="https://picsum.photos/id/1003/1280/720.jpg 2x" alt="UX case study screenshot" class="card-img">
+            </picture>
+            <div class="card-inner">
+              <h3>ART</h3>
+              <p>Character Design · Illustration · TA</p>
+            </div>
+          </a>
 
-        <a class="card" href="/art">
-          <div class="card-inner">
-            <h3>ART & TA</h3>
-            <p>角色 · 场景 · 技术美术</p>
-          </div>
-        </a>
+          <a class="card" href="/art">
+            <picture class="card-media" aria-hidden="false">
+              <source srcset="https://picsum.photos/id/1005/640/360.webp 1x, https://picsum.photos/id/1005/1280/720.webp 2x" type="image/webp">
+              <img src="https://picsum.photos/id/1005/640/360.jpg" srcset="https://picsum.photos/id/1005/1280/720.jpg 2x" alt="Art and technical art sample" class="card-img">
+            </picture>
+            <div class="card-inner">
+              <h3>ARCHITECTURE</h3>
+              <p>Architectural Design · Urban Planning</p>
+            </div>
+          </a>
 
-        <a class="card big" href="/research">
-          <div class="card-inner">
-            <h3>RESEARCH</h3>
-            <p>学术 · 毕业论文 · 发表</p>
-          </div>
-        </a>
+          <a class="card big" href="/research">
+            <picture class="card-media" aria-hidden="false">
+              <source srcset="https://picsum.photos/id/1001/960/420.webp 1x, https://picsum.photos/id/1001/1920/840.webp 2x" type="image/webp">
+              <img src="https://picsum.photos/id/1001/960/420.jpg" srcset="https://picsum.photos/id/1001/1920/840.jpg 2x" alt="Research project cover" class="card-img">
+            </picture>
+            <div class="card-inner">
+              <h3>RESEARCH</h3>
+              <p>Academic Research · Graduation Thesis</p>
+            </div>
+          </a>
+        </div>
       </section>
 
       <footer class="footer">
-        <p>© 2025 Danica · Built with GitHub Pages</p>
+        <p>© 2025 Chenxin · Built with GitHub Pages</p>
       </footer>
     </main>
   </div>

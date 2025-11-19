@@ -12,8 +12,11 @@
 
   function resize() {
     DPR = Math.max(1, window.devicePixelRatio || 1);
-    w = canvas.clientWidth = window.innerWidth;
-    h = canvas.clientHeight = window.innerHeight;
+    // 设置逻辑像素和物理像素尺寸（避免写入只读 clientWidth/clientHeight）
+    w = window.innerWidth;
+    h = window.innerHeight;
+    canvas.style.width = w + 'px';
+    canvas.style.height = h + 'px';
     canvas.width = Math.floor(w * DPR);
     canvas.height = Math.floor(h * DPR);
     ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
@@ -57,12 +60,12 @@
   function tick(now) {
     const dt = Math.min(40, now - last);
     last = now;
-    update(dt);
+    update(dt, now);
     draw();
     requestAnimationFrame(tick);
   }
 
-  function update(dt) {
+  function update(dt, now) {
     const t = dt / 16.666;
     // 角度缓慢旋转
     angle += ANGLE_SPEED * t;
