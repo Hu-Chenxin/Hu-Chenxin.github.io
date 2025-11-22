@@ -148,20 +148,11 @@ export const PROJECTS: Project[] = [
     description: '灵感来自好友的性格、音乐偏好与万圣节棒糖果造型。',
     date: '2023-10',
     tags: ['角色设计','乐队主题','伪厚涂', 'SAI2'],
-    media: [
-      {
-        type: 'image',
-        url: '/assets/art/主唱.jpg'
-      },
-      {
-        type: 'image',
-        url: '/assets/art/键盘手.jpg'
-      },
-      {
-        type: 'image',
-        url: '/assets/art/贝斯手.jpg'
-      }
-    ]
+    media: {
+      type: 'pdf',
+      url: '/assets/art/角色设计.pdf', 
+      thumbnail: '/assets/art/主唱.jpg'
+    }
   },
   {
     id: '11',
@@ -170,15 +161,25 @@ export const PROJECTS: Project[] = [
     description: '基于空间叙事的建筑设计与日常化空间构建',
     date: '2024-06',
     tags: ['建筑设计','展馆空间','Rhino', '场景渲染'],
-    media: [
-      {
-        type: 'pdf',
-        url: '/assets/arch/毕设.pdf',
-        thumbnail: '/assets/arch/毕设.jpg'
-      }
-    ]
+    media: {
+      type: 'pdf',
+      url: '/assets/arch/毕设.pdf',
+      thumbnail: '/assets/arch/毕设.jpg'
+    }
+  },
+  {
+    id: '12',
+    title: '插画合集',
+    category: ProjectCategory.Art,
+    description: '',
+    date: '2022-08',
+    tags: ['广告设计','插画','原创'],
+    media: {
+      type: 'pdf',
+      url: '/assets/art/插画.pdf',
+      thumbnail: '/assets/art/纤茶.jpg'
+    }
   }
-  
 ];
 
 export const CATEGORIES = Object.values(ProjectCategory);
