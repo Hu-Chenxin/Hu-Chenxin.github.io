@@ -63,19 +63,7 @@ export const PROJECTS: Project[] = [
       thumbnail: '/assets/ClashRoyale/皇室战争.png'
     }
   },
-  {
-    id: '4',
-    title: '实习产出：AI搜索与游戏客服巡检',
-    category: ProjectCategory.AI,
-    description: '在网易互娱实习期间，参与了C端大神AI搜索与B端客服AI巡检项目。',
-    date: '2025-09',
-    tags: ['产品实习', 'AI搜索', '客服巡检', 'Dify', 'python'],
-    media: {
-      type: 'pdf',
-      url: '/assets/NetEase/作品集.pdf', 
-      thumbnail: '/assets/NetEase/封面.jpg'
-    }
-  },
+
   {
     id: '5',
     title: '《铜梁龙舞》非遗VR游戏',

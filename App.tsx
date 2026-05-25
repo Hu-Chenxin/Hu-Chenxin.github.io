@@ -36,16 +36,20 @@ const App: React.FC = () => {
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative z-10">
         
         {/* Hero Section */}
-        <section className="min-h-[40vh] flex flex-col justify-center items-center text-center mb-16 space-y-6 animate-[fadeIn_1s_ease-out]">
+        <section className="flex flex-col justify-center items-center text-center pt-20 pb-10 mb-10 space-y-6 animate-[fadeIn_1s_ease-out]">
           <div className="inline-block p-1 px-3 rounded-full border border-cyan-500/30 bg-cyan-950/30 text-cyan-400 text-xs font-mono tracking-widest uppercase mb-4 backdrop-blur-sm">
             Welcome, Traveler
           </div>
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-200 to-slate-400 tracking-tight drop-shadow-[0_0_30px_rgba(255,255,255,0.1)]">
             {HERO_SLOGAN}
           </h1>
-          <p className="text-xl text-slate-400 max-w-2xl font-light leading-relaxed">
-            {SUB_SLOGAN}
-          </p>
+          <div className="max-w-3xl px-6 pt-14 flex items-start justify-center gap-4 text-slate-300">
+            <span className="text-cyan-400 text-lg md:text-xl flex-shrink-0 mt-0.5 leading-relaxed">✦</span>
+            <p className="text-sm md:text-base leading-relaxed text-left indent-8">
+              胡晨欣，哈工大数字媒体工学硕士在读，实习于腾讯光子、网易互娱。研究方向为AI游戏系统架构和Multi-Agent，是AI深度用户与开发者，对技术实现文化创意的事业具有强烈热爱与毅力。
+            </p>
+            <span className="text-cyan-400 text-lg md:text-xl flex-shrink-0 mt-0.5 leading-relaxed">✦</span>
+          </div>
         </section>
 
         {/* Filter Navigation (Sticky) */}
@@ -89,12 +93,13 @@ const App: React.FC = () => {
         {filteredProjects.length === 0 && (
           <div className="text-center py-32 text-slate-500">
             <Filter size={48} className="mx-auto mb-4 opacity-50" />
-            <p className="text-xl font-light">No projects discovered in this sector yet.</p>
+            <p className="text-xl font-light">Currently in production...</p>
           </div>
         )}
 
         {/* Footer */}
-        <footer className="mt-32 text-center text-slate-500 text-sm py-12 border-t border-white/5">
+        <footer className="mt-32 text-center text-slate-500 text-sm py-12 border-t border-white/5 space-y-2">
+          <p className="text-slate-400">{SUB_SLOGAN}</p>
           <p>&copy; {new Date().getFullYear()} Hu Chenxin's Portfolio. Built with React & Tailwind.</p>
         </footer>
       </main>
