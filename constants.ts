@@ -205,7 +205,7 @@ export const PROJECTS: Project[] = [
     id: '10',
     title: '《Fantastic Nights》角色设计',
     category: ProjectCategory.Art,
-    description: '灵感来自好友的性格、音乐偏好与万圣节棒糖果造型。',
+    description: '灵感来自好友的性格、音乐偏好与万圣节糖果造型。',
     date: '2023-10',
     tags: ['角色设计', '伪厚涂', 'SAI2'],
     media: {
